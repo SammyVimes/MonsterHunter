@@ -3,6 +3,9 @@ Game based on AndEngine
 Made with AndEngine Cookbook guidance
 
 TODO:
+
+Resource manager
+
 Simple scene
 
 Simple movement
