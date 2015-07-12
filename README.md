@@ -4,10 +4,15 @@ Made with AndEngine Cookbook guidance
 
 TODO:
 Simple scene
+
 Simple movement
+
 Controls
+
 XML texture management
+
 Pre-made maps
+
 Map generator
 
 Plot:
