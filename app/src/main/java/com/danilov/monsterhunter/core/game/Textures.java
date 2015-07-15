@@ -8,7 +8,7 @@ public enum Textures {
 
 
     KNIGHT_IDLE("knight_idle.png", 0, 0, 0, false),
-    KNIGHT_RUN("knight_run_animated.png", 1, 3, 0, true);
+    KNIGHT_RUN("knight_run_animated.png", 1, 3, 1, true);
 
     public final String pTextureSrc;
     public final int pTextureId;
