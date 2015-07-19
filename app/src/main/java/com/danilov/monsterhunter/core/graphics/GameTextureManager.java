@@ -6,9 +6,11 @@ import com.danilov.monsterhunter.core.game.Textures;
 
 import org.andengine.opengl.texture.ITexture;
 import org.andengine.opengl.texture.TextureManager;
+import org.andengine.opengl.texture.TextureOptions;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlas;
 import org.andengine.opengl.texture.atlas.bitmap.BitmapTextureAtlasTextureRegionFactory;
 import org.andengine.opengl.texture.atlas.bitmap.BuildableBitmapTextureAtlas;
+import org.andengine.opengl.texture.bitmap.BitmapTextureFormat;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,6 +30,11 @@ public class GameTextureManager {
     public BuildableBitmapTextureAtlas createAtlas(final TextureManager pTextureManager, final int pWidth, final int pHeight) {
         return new BuildableBitmapTextureAtlas(pTextureManager, pWidth, pHeight);
     }
+
+    public BuildableBitmapTextureAtlas createRepeatingAtlas(final TextureManager pTextureManager, final int pWidth, final int pHeight) {
+        return new BuildableBitmapTextureAtlas(pTextureManager, pWidth, pHeight, TextureOptions.REPEATING_BILINEAR);
+    }
+
     public GameTexture createTexture(final BuildableBitmapTextureAtlas pAtlas, final Textures pTexture) {
         final GameTexture gameTexture;
         if (pTexture.isAnim) {
